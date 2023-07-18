@@ -2,13 +2,17 @@
     margin: 0;
     padding: 0;
   }
+
+html {
+  overflow-x: hidden;
+}
   
 header {
     width: 100%;
     height: 500px;
     padding: 20px 0 20px 0;
 
-    background: #282A29;
+    background-color: #282A29;
     background-image: url("./photo/back.jpg");
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -150,4 +154,59 @@ footer {
   background: #282A29;
   color: #cbcbcb;
   line-height: 35px;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    width: 100%;
+  }
+
+  header {
+    min-height: 60ex;
+
+    background-position: center bottom;
+    background-size: 40%;
+  }
+
+  #welcome {
+      width: 60%;
+      padding: 5% 0 0 20%;
+  }
+
+  #about_me {
+      margin: 5% 5% 0 5%;
+  }
+
+  .slider-container {
+      flex-wrap: nowrap;
+      justify-content: center;
+  }
+
+  .slider img {
+      width: 60%;
+      margin: 10px 0 20ex 18%;
+  }
+
+  .slider-container button {
+    background: none;
+    font-size: 20px;
+  
+    margin: 0 5ex 0 5ex;
+  }
+
+  footer {
+      flex-wrap: wrap;
+  }
+
+  footer img {
+      flex-basis: 100%;
+      object-fit: contain;
+  }
+
+  #contact {
+      flex-grow: initial;
+      flex-basis: 60%;
+      padding-left: 0;
+      margin-bottom: 20px;
+  }
 }
