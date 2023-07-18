@@ -178,6 +178,7 @@ footer {
   }
 
   #about_me {
+      min-width: 600px;
       margin: 5%;
   }
 
@@ -196,6 +197,11 @@ footer {
     font-size: 20px;
   
     margin: 0 5ex 0 5ex;
+  }
+
+  .slider-container button:hover {
+    background: none;
+    color: #727272;
   }
 
   footer {
