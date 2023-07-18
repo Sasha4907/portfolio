@@ -117,14 +117,9 @@ nav ul {
 
 .slider-container button {
   color: #ffffff;
-  background-color: #FFAF45;
+  background: none;
   border: none;
-  text-align: center;
   font-size: 20px;
-
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
 }
 
 footer a {
@@ -136,11 +131,11 @@ footer a {
 }
 
 .slider-container button:hover {
-  background-color: #727272;
+  color: #FFAF45;
 }
 
 footer a:hover {
-  color: #727272;
+  color: #FFAF45;
 }
 
 footer {
@@ -157,29 +152,34 @@ footer {
   line-height: 35px;
 }
 
-@media (max-width: 1000px) {
-  p {
-    font-size: large;
-  }
+@media screen and (max-device-width: 500px) {
   nav {
     width: 100%;
+    font-size: 24px;
   }
 
   header {
-    min-height: 70ex;
+    min-height: 80ex;
 
+    background-image: url("./photo/back_ver2.gif");
     background-position: center bottom;
-    background-size: 40%;
+    background-size: 100%;
   }
 
   #welcome {
-      width: 80%;
+      width: 90%;
       padding: 5% 0 0 10%;
+
+      font-size: 28px;
   }
 
   #about_me {
-      min-width: 600px;
       margin: 5%;
+      font-size: 16px;
+  }
+  
+  #conteiner {
+    background-image: url("./photo/aboutme_ver2.png");
   }
 
   .slider-container {
@@ -199,11 +199,6 @@ footer {
     margin: 0 5ex 0 5ex;
   }
 
-  .slider-container button:hover {
-    background: none;
-    color: #727272;
-  }
-
   footer {
       flex-wrap: wrap;
   }
@@ -216,7 +211,6 @@ footer {
   #contact {
       flex-grow: initial;
       flex-basis: 60%;
-      padding-left: 0;
       margin-bottom: 20px;
   }
 }
